@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restore Your Hair. Reclaim Your Confidence. Premium wigs, scalp treatments, and expert consultations for hair restoration and confidence.">
+    <meta name="keywords" content="wigs, hair restoration, scalp treatments, medical wigs, hair consultations">
+    <meta name="author" content="IMX Hair">
+    <meta property="og:title" content="Restore Your Hair. Reclaim Your Confidence. - IMX Hair">
+    <meta property="og:description" content="Premium wigs, treatments, and the confidence that follows.">
+    <meta property="og:type" content="website">
+    <title>IMX Hair - Restore Your Hair. Reclaim Your Confidence.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .gradient-tertiary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-hover {
+            transition: all 300ms ease;
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .link-hover {
+            transition: color 300ms ease;
+        }
+        
+        .link-hover:hover {
+            color: #667eea;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            transition: all 300ms ease;
+        }
+        
+        .sticky-header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            transition: all 300ms ease;
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-primary text-white py-3 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm md:text-base font-medium">
+                <i class="fas fa-shipping-fast mr-2"></i>
+                Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee
+            </p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky-header bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#home" class="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300">
+                        <div class="gradient-primary w-10 h-10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-spa text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900 hidden sm:inline">IMX Hair</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a href="#home" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">Home</a>
+                    <a href="#features" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">Features</a>
+                    <a href="#benefits" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">Benefits</a>
+                    <a href="#about" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">About</a>
+                    <a href="#testimonials" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">Testimonials</a>
+                    <a href="#faq" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">FAQ</a>
+                    <a href="#contact" class="px-3 py-2 text-sm font-medium text-gray-700 link-hover">Contact</a>
+                </nav>
+
+                <!-- Right Side Actions -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://imxhair.com" class="hidden sm:inline-block gradient-primary text-white px-6 py-2 rounded-full font-semibold btn-hover">
+                        Shop Now
+                    </a>
+                    <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                        <i class="fas fa-bars text-2xl text-gray-900"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <nav class="mobile-menu hidden md:hidden pb-4 border-t border-gray-100">
+                <div class="flex flex-col space-y-2 pt-4">
+                    <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Home</a>
+                    <a href="#features" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Benefits</a>
+                    <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-300">Contact</a>
+                    <a href="https://imxhair.com" class="block gradient-primary text-white px-4 py-2 rounded-lg font-semibold text-center mt-2">Shop Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen min-h-96 md:min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=900&fit=crop&q=80" 
+                alt="Professional hair styling" 
+                class="w-full h-full object-cover"
+            >
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 md:py-0">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight md:leading-tight lg:leading-tight tracking-tight mb-6 fade-in">
+                Restore Your Hair.<br>Reclaim Your Confidence.
+            </h1>
+            
+            <p class="text-lg md:text-2xl text-gray-100 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed fade-in" style="animation-delay: 0.2s;">
+                Wigs, treatments, and the confidence that follows.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in" style="animation-delay: 0.4s;">
+                <a href="https://imxhair.com" class="gradient-secondary text-white px-8 md:px-10 py-4 rounded-full font-bold text-lg btn-hover inline-block">
+                    Explore Our Collection
+                </a>
+                <a href="#features" class="bg-white text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-lg btn-hover inline-block hover:bg-gray-50">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive hair restoration solutions designed to help you look and feel your best.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
+                <!-- Feature 1: Medical Wigs -->
+                <div class="feature-card card-hover bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="mb-6">
+                        <div class="feature-icon text-gradient inline-block">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Medical Wigs</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Premium quality wigs crafted with medical-grade materials. Comfortable, breathable, and designed to look completely natural for everyday wear and special occasions.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-100">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>100% Human Hair Options</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Custom Fitting Available</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Hypoallergenic Materials</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Scalp Treatments -->
+                <div class="feature-card card-hover bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="mb-6">
+                        <div class="feature-icon text-gradient inline-block">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Scalp Treatments</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Advanced therapeutic treatments to nourish and restore scalp health. Our scientifically-formulated solutions promote natural hair growth and overall scalp wellness.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-100">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Natural Ingredients</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Dermatologist Tested</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Visible Results in 4 Weeks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Private Consultations -->
+                <div class="feature-card card-hover bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="mb-6">
+                        <div class="feature-icon text-gradient inline-block">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Private Consultations</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        One-on-one guidance from our team of certified hair restoration experts. Personalized treatment plans tailored to your unique needs and goals.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-100">
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Free Initial Consultation</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Virtual & In-Person Options</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Ongoing Support Included</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section 1: Looks Like You -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img 
+                        src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=800&h=600&fit=crop&q=80" 
+                        alt="Natural looking wig styling" 
+                        class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                    >
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="mb-6">
+                        <span class="inline-block gradient-secondary text-white px-4 py-2 rounded-full text-sm font-semibold">Benefit 1</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Looks Like You
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Our premium wigs are crafted with meticulous attention to detail, featuring natural-looking hairlines, realistic texture variations, and customizable colors that match your unique style. Each wig is designed to seamlessly blend with your natural features, giving you a completely undetectable appearance.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Natural Hairlines:</strong> Expertly designed to look completely realistic and undetectable</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Custom Colors:</strong> Match any shade perfectly with our extensive color palette</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Texture Variation:</strong> Realistic wave and curl patterns for authentic appearance</span>
+                        </li>
+                    </ul>
+                    <a href="https://imxhair.com" class="gradient-primary text-white px-8 py-3 rounded-full font-bold btn-hover inline-block">
+                        Explore Styles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section 2: Feels Like You -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <img 
+                        src="https://images.unsplash.com/photo-1522335617519-a4e14359b3cb?w=800&h=600&fit=crop&q=80" 
+                        alt="Comfortable wig wearing experience" 
+                        class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                    >
+                </div>
+                <div>
+                    <div class="mb-6">
+                        <span class="inline-block gradient-tertiary text-white px-4 py-2 rounded-full text-sm font-semibold">Benefit 2</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Feels Like You
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Comfort is paramount. Our wigs feature advanced breathable construction with lightweight materials that feel incredibly natural against your scalp. Experience all-day comfort without compromising on style or appearance.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Breathable Design:</strong> Advanced ventilation system keeps your scalp cool and comfortable</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Lightweight Materials:</strong> Minimal weight for maximum comfort throughout the day</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Adjustable Fit:</strong> Customizable sizing for a perfect, secure fit every time</span>
+                        </li>
+                    </ul>
+                    <a href="https://imxhair.com" class="gradient-primary text-white px-8 py-3 rounded-full font-bold btn-hover inline-block">
+                        Find Your Fit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section 3: Supported by Experts -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img 
+                        src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&q=80" 
+                        alt="Professional hair consultation" 
+                        class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                    >
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="mb-6">
+                        <span class="inline-block gradient-secondary text-white px-4 py-2 rounded-full text-sm font-semibold">Benefit 3</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Supported by Experts
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Our team of certified hair restoration specialists brings decades of combined experience. From personalized consultations to ongoing support, we're committed to your journey toward confidence and beautiful hair.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Expert Guidance:</strong> Certified specialists with years of professional experience</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Personalized Plans:</strong> Customized treatment strategies based on your specific needs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-500 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-700"><strong>Lifetime Support:</strong> Continuous assistance and adjustments throughout your journey</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="gradient-primary text-white px-8 py-3 rounded-full font-bold btn-hover inline-block">
+                        Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12 md:mb-16">
+                <div>
+                    <img 
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80" 
+                        alt="IMX Hair team and facilities" 
+                        class="rounded-2xl shadow-xl w-full h-auto object-cover"
+                    >
+                </div>
+                <div>
+                    <div class="mb-6">
+                        <span class="inline-block gradient-primary text-white px-4 py-2 rounded-full text-sm font-semibold">About Us</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Restoring Confidence Since 2015
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        IMX Hair was founded with a simple yet powerful mission: to help individuals regain their confidence through premium hair restoration solutions. What started as a small boutique clinic has grown into a trusted name in hair restoration, serving thousands of satisfied clients worldwide. Our founders, both passionate advocates for hair wellness and personal confidence, recognized a critical gap in the market for high-quality, compassionate hair restoration services. Today, we continue to honor that original vision by combining cutting-edge technology with personalized, human-centered care.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our mission extends beyond providing wigs and treatments—we're committed to empowering every individual to feel confident in their own skin. We believe that beautiful hair is just the beginning; true confidence comes from being supported by experts who genuinely care about your journey. Through continuous innovation, rigorous quality standards, and an unwavering commitment to customer satisfaction, we've established ourselves as the premier destination for medical-grade hair restoration. We invest in ongoing research and development, maintain the highest standards of product quality, and foster a supportive community where every client feels valued and understood.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Real stories from real people who've transformed their lives with IMX Hair.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900">Sarah Mitchell</h3>
+                            <p class="text-sm text-gray-600">Cancer Survivor & Entrepreneur</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "IMX Hair gave me back my confidence during the most challenging time of my life. The medical wig I received was absolutely indistinguishable from my natural hair, and the support from their team was exceptional. They treated me not just as a customer, but as a person going through something difficult. I can't recommend them highly enough."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900">James Rodriguez</h3>
+                            <p class="text-sm text-gray-600">Professional Hair Stylist</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "As a hairstylist, I'm very particular about quality. IMX Hair's collection surpassed all my expectations. The craftsmanship is impeccable, the materials are premium, and the customer service is outstanding. I've recommended them to numerous clients, and they've all been equally impressed."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900">Emma Thompson</h3>
+                            <p class="text-sm text-gray-600">Fashion Designer</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "I was skeptical at first, but the free consultation completely changed my perspective. The experts took time to understand my lifestyle, preferences, and needs. The wig they recommended is so comfortable I forget I'm wearing it. The scalp treatment has also made a noticeable difference in my natural hair health."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-2xl p-8 border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900">Michael Chen</h3>
+                            <p class="text-sm text-gray-600">Business Executive</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "IMX Hair's private consultation service was invaluable. The personalized treatment plan they created addressed my specific concerns perfectly. Within just a few weeks of using their scalp treatment, I saw visible improvements. The investment in myself has been worth every penny."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">
+                    Find answers to common questions about our products and services.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                        <span class="text-lg font-semibold text-gray-900">How long do your medical wigs typically last?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 py-6 border-t border-gray-100 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            The lifespan of our medical wigs depends on the type and care regimen. Our 100% human hair wigs typically last 12-18 months with proper care, while our premium synthetic blends can last 6-12 months. We provide comprehensive care instructions with every purchase to help maximize the longevity of your wig. Additionally, we offer professional cleaning and maintenance services to extend the life of your investment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                        <span class="text-lg font-semibold text-gray-900">Can I customize the fit and appearance of my wig?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 py-6 border-t border-gray-100 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! Customization is one of our specialties. During your private consultation, our experts will help you select the perfect style, color, and length. We also offer custom fitting services to ensure your wig sits perfectly and comfortably. Many clients choose to have their wigs styled by our professional stylists or their own hairdressers to create a truly personalized look that matches their unique aesthetic.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                        <span class="text-lg font-semibold text-gray-900">How soon can I expect to see results from your scalp treatments?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 py-6 border-t border-gray-100 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            Most clients begin to notice improvements in scalp health within 2-4 weeks of consistent use. Visible results such as reduced itching, improved texture, and enhanced shine typically appear within 4-8 weeks. For more significant results related to hair growth and thickness, we recommend a 3-6 month commitment to the treatment regimen. Results vary based on individual factors, and our experts can provide personalized timeline expectations during your consultation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                        <span class="text-lg font-semibold text-gray-900">What is your return and satisfaction guarantee policy?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 py-6 border-t border-gray-100 bg-gray-50">
+                        <p class="text-gray-700 leading-relaxed">
+                            We stand behind our products with a 100% Satisfaction Guarantee. If you're not completely satisfied with your wig or treatment within 30 days of purchase, we offer a full refund with no questions asked. We want you to feel confident in your purchase, and if a product isn't right for you, we'll make it right. Additionally, we offer free exchanges within 60 days if you'd like to try a different style or size.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="gradient-primary text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                                <a href="mailto:hello@imxhair.com" class="text-gray-600 link-hover text-lg">hello@imxhair.com</a>
+                                <p class="text-gray-600 text-sm mt-1">We respond to all inquiries within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="gradient-primary text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-phone text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+                                <a href="tel:+1234567890" class="text-gray-600 link-hover text-lg">+1 (234) 567-8900</a>
+                                <p class="text-gray-600 text-sm mt-1">Monday - Friday, 9 AM - 6 PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="gradient-primary text-white w-12 h-12 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Visit Us</h3>
+                                <p class="text-gray-600 text-lg">123 Hair Restoration Ave<br>New York, NY 10001</p>
+                                <p class="text-gray-600 text-sm mt-1">By appointment only</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 border-t border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 gradient-primary text-white rounded-lg flex items-center justify-center btn-hover">
+                                    <i class="fab fa-facebook-f text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 gradient-primary text-white rounded-lg flex items-center justify-center btn-hover">
+                                    <i class="fab fa-instagram text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 gradient-primary text-white rounded-lg flex items-center justify-center btn-hover">
+                                    <i class="fab fa-twitter text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 gradient-primary text-white rounded-lg flex items-center justify-center btn-hover">
+                                    <i class="fab fa-linkedin-in text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <form class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Your name" 
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="your@email.com" 
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">Subject</label>
+                            <select 
+                                id="subject" 
+                                name="subject" 
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                                required
+                            >
+                                <option value="">Select a subject</option>
+                                <option value="consultation">Schedule Consultation</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                placeholder="Tell us more about your inquiry..." 
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 resize-none"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full gradient-primary text-white px-6 py-3 rounded-lg font-bold btn-hover"
+                        >
+                            Send Message
+                        </button>
+
+                        <p class="text-sm text-gray-600 text-center mt-4">
+                            We'll get back to you within 24 hours
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-purple-600 to-pink-600 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img 
+                src="https://images.unsplash.com/photo-1557804506-669714d2e9d8?w=1600&h=900&fit=crop&q=80" 
+                alt="Background" 
+                class="w-full h-full object-cover"
+            >
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Restore Your Confidence?
+            </h2>
+            <p class="text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed opacity-90">
+                Join thousands of satisfied clients who've transformed their lives with IMX Hair. Start your journey today with a free consultation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://imxhair.com" class="bg-white text-purple-600 px-8 md:px-10 py-4 rounded-full font-bold text-lg btn-hover inline-block hover:bg-gray-50">
+                    Shop Now
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 md:px-10 py-4 rounded-full font-bold text-lg btn-hover inline-block hover:bg-white hover:text-purple-600">
+                    Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="gradient-primary w-10 h-10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-spa text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">IMX Hair</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-4">
+                        Premium hair restoration solutions for confidence and beauty.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:gradient-primary text-white rounded-lg flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:gradient-primary text-white rounded-lg flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:gradient-primary text-white rounded-lg flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:gradient-primary text-white rounded-lg flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="link-hover hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="link-hover hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="link-hover hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="link-hover hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="link-hover hover:text-white transition-colors duration-300">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#faq" class="link-hover hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#contact" class="link-hover hover:text-white transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="https://imxhair.com" class="link-hover hover:text-white transition-colors duration-300">Shop</a></li>
+                        <li><a href="blog.html" class="link-hover hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="link-hover hover:text-white transition-colors duration-300">Care Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="link-hover hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="link-hover hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="link-hover hover:text-white transition-colors duration-300">Shipping Policy</a></li>
+                        <li><a href="#" class="link-hover hover:text-white transition-colors duration-300">Return Policy</a></li>
+                        <li><a href="#" class="link-hover hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <!-- Contact Info -->
+                    <div>
+                        <p class="text-sm text-gray-400 mb-2">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:hello@imxhair.com" class="link-hover hover:text-white">hello@imxhair.com</a>
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+1234567890" class="link-hover hover:text-white">+1 (234) 567-8900</a>
+                        </p>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">
+                            &copy; <span id="year">2024</span> IMX Hair. All rights reserved.
+                        </p>
+                    </div>
+
+                    <!-- Policies -->
+                    <div class="text-right">
+                        <p class="text-sm text-gray-400">
+                            <i class="fas fa-check-circle mr-2 text-green-500"></i>
+                            100% Satisfaction Guaranteed
+                        </p>
+                        <p class="text-sm text-gray-400 mt-2">
+                            <i class="fas fa-lock mr-2 text-green-500"></i>
+                            Secure & Encrypted
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+
+            // Sticky Header on Scroll
+            const header = document.querySelector('.sticky-header');
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+
+            // Form Submission
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const data = {
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        subject: formData.get('subject'),
+                        message: formData.get('message')
+                    };
+                    
+                    // Log form data (in production, send to server)
+                    console.log('Form submitted:', data);
+                    
+                    // Show success message
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Message Sent!';
+                    submitButton.style.opacity = '0.7';
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Restore button after 3 seconds
+                    setTimeout(() => {
+                        submitButton.textContent = originalText;
+                        submitButton.style.opacity = '1';
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
